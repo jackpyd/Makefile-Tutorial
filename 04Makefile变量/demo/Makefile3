@@ -1,0 +1,19 @@
+# 使用自定义变量优化
+
+TARGET = calc
+OBJ = add.o sub.o calc.o
+
+calc:$(OBJ)
+	$(CXX) $^ -o $(TARGET)
+	
+calc.o:calc.cpp
+	$(CXX) -c $^ -o $@
+
+add.o:add.cpp
+	$(CXX) -c $^ -o $@
+
+sub.o:sub.cpp
+	$(CXX) -c $^ -o $@
+
+clean:
+	$(RM) -rf *.o $(TARGET)

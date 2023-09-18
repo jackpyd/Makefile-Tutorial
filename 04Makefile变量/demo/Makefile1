@@ -1,0 +1,16 @@
+# 使用$^ $@ 优化
+calc:add.o sub.o calc.o
+	gcc $^ -o calc
+	
+calc.o:calc.cpp
+	gcc -c $^ -o $@
+
+add.o:add.cpp
+	gcc -c $^ -o $@
+
+sub.o:sub.cpp
+	gcc -c $^ -o $@
+
+clean:
+	rm -rf *.o calc
+

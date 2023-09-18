@@ -1,0 +1,17 @@
+# 使用系统常量优化
+# CXX： C++编译器
+# RM: 删除程序的别名，默认 rm -f
+calc:add.o sub.o calc.o
+	$(CXX) $^ -o calc
+	
+calc.o:calc.cpp
+	$(CXX) -c $^ -o $@
+
+add.o:add.cpp
+	$(CXX) -c $^ -o $@
+
+sub.o:sub.cpp
+	$(CXX) -c $^ -o $@
+
+clean:
+	$(RM) -rf *.o calc

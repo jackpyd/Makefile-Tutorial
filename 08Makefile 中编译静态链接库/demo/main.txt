@@ -1,0 +1,242 @@
+
+main:	file format mach-o 64-bit x86-64
+
+Disassembly of section __TEXT,__text:
+
+0000000100003e10 <aTest::func1()>:
+100003e10: 55                          	pushq	%rbp
+100003e11: 48 89 e5                    	movq	%rsp, %rbp
+100003e14: 48 83 ec 10                 	subq	$16, %rsp
+100003e18: 48 89 7d f8                 	movq	%rdi, -8(%rbp)
+100003e1c: 48 8d 3d 59 01 00 00        	leaq	345(%rip), %rdi         ## 0x100003f7c <dyld_stub_binder+0x100003f7c>
+100003e23: b0 00                       	movb	$0, %al
+100003e25: e8 28 01 00 00              	callq	0x100003f52 <dyld_stub_binder+0x100003f52>
+100003e2a: 48 83 c4 10                 	addq	$16, %rsp
+100003e2e: 5d                          	popq	%rbp
+100003e2f: c3                          	retq
+
+0000000100003e30 <_main>:
+100003e30: 55                          	pushq	%rbp
+100003e31: 48 89 e5                    	movq	%rsp, %rbp
+100003e34: 48 83 ec 20                 	subq	$32, %rsp
+100003e38: c7 45 fc 00 00 00 00        	movl	$0, -4(%rbp)
+100003e3f: 48 8d 7d f0                 	leaq	-16(%rbp), %rdi
+100003e43: e8 48 00 00 00              	callq	0x100003e90 <MainTest::MainTest()>
+100003e48: 48 8d 7d f0                 	leaq	-16(%rbp), %rdi
+100003e4c: e8 fb 00 00 00              	callq	0x100003f4c <dyld_stub_binder+0x100003f4c>
+100003e51: 48 8d 7d f0                 	leaq	-16(%rbp), %rdi
+100003e55: e8 56 00 00 00              	callq	0x100003eb0 <MainTest::func2()>
+100003e5a: 48 8d 7d f0                 	leaq	-16(%rbp), %rdi
+100003e5e: e8 6d 00 00 00              	callq	0x100003ed0 <MainTest::func3()>
+100003e63: 48 8d 3d 1f 01 00 00        	leaq	287(%rip), %rdi         ## 0x100003f89 <dyld_stub_binder+0x100003f89>
+100003e6a: b0 00                       	movb	$0, %al
+100003e6c: e8 e1 00 00 00              	callq	0x100003f52 <dyld_stub_binder+0x100003f52>
+100003e71: 48 8d 7d e8                 	leaq	-24(%rbp), %rdi
+100003e75: e8 96 ff ff ff              	callq	0x100003e10 <aTest::func1()>
+100003e7a: 31 c0                       	xorl	%eax, %eax
+100003e7c: 48 83 c4 20                 	addq	$32, %rsp
+100003e80: 5d                          	popq	%rbp
+100003e81: c3                          	retq
+100003e82: 66 2e 0f 1f 84 00 00 00 00 00       	nopw	%cs:(%rax,%rax)
+100003e8c: 0f 1f 40 00                 	nopl	(%rax)
+
+0000000100003e90 <MainTest::MainTest()>:
+100003e90: 55                          	pushq	%rbp
+100003e91: 48 89 e5                    	movq	%rsp, %rbp
+100003e94: 48 83 ec 10                 	subq	$16, %rsp
+100003e98: 48 89 7d f8                 	movq	%rdi, -8(%rbp)
+100003e9c: 48 8b 7d f8                 	movq	-8(%rbp), %rdi
+100003ea0: e8 4b 00 00 00              	callq	0x100003ef0 <MainTest::MainTest()>
+100003ea5: 48 83 c4 10                 	addq	$16, %rsp
+100003ea9: 5d                          	popq	%rbp
+100003eaa: c3                          	retq
+100003eab: 0f 1f 44 00 00              	nopl	(%rax,%rax)
+
+0000000100003eb0 <MainTest::func2()>:
+100003eb0: 55                          	pushq	%rbp
+100003eb1: 48 89 e5                    	movq	%rsp, %rbp
+100003eb4: 48 83 ec 10                 	subq	$16, %rsp
+100003eb8: 48 89 7d f8                 	movq	%rdi, -8(%rbp)
+100003ebc: 48 8d 3d c9 00 00 00        	leaq	201(%rip), %rdi         ## 0x100003f8c <dyld_stub_binder+0x100003f8c>
+100003ec3: b0 00                       	movb	$0, %al
+100003ec5: e8 88 00 00 00              	callq	0x100003f52 <dyld_stub_binder+0x100003f52>
+100003eca: 48 83 c4 10                 	addq	$16, %rsp
+100003ece: 5d                          	popq	%rbp
+100003ecf: c3                          	retq
+
+0000000100003ed0 <MainTest::func3()>:
+100003ed0: 55                          	pushq	%rbp
+100003ed1: 48 89 e5                    	movq	%rsp, %rbp
+100003ed4: 48 83 ec 10                 	subq	$16, %rsp
+100003ed8: 48 89 7d f8                 	movq	%rdi, -8(%rbp)
+100003edc: 48 8d 3d b9 00 00 00        	leaq	185(%rip), %rdi         ## 0x100003f9c <dyld_stub_binder+0x100003f9c>
+100003ee3: b0 00                       	movb	$0, %al
+100003ee5: e8 68 00 00 00              	callq	0x100003f52 <dyld_stub_binder+0x100003f52>
+100003eea: 48 83 c4 10                 	addq	$16, %rsp
+100003eee: 5d                          	popq	%rbp
+100003eef: c3                          	retq
+
+0000000100003ef0 <MainTest::MainTest()>:
+100003ef0: 55                          	pushq	%rbp
+100003ef1: 48 89 e5                    	movq	%rsp, %rbp
+100003ef4: 48 83 ec 10                 	subq	$16, %rsp
+100003ef8: 48 89 7d f8                 	movq	%rdi, -8(%rbp)
+100003efc: 48 8b 7d f8                 	movq	-8(%rbp), %rdi
+100003f00: 48 89 7d f0                 	movq	%rdi, -16(%rbp)
+100003f04: e8 27 00 00 00              	callq	0x100003f30 <soTest::soTest()>
+100003f09: 48 8b 45 f0                 	movq	-16(%rbp), %rax
+100003f0d: 48 8b 0d f4 00 00 00        	movq	244(%rip), %rcx         ## 0x100004008 <dyld_stub_binder+0x100004008>
+100003f14: 48 83 c1 10                 	addq	$16, %rcx
+100003f18: 48 89 08                    	movq	%rcx, (%rax)
+100003f1b: 48 83 c4 10                 	addq	$16, %rsp
+100003f1f: 5d                          	popq	%rbp
+100003f20: c3                          	retq
+100003f21: 66 2e 0f 1f 84 00 00 00 00 00       	nopw	%cs:(%rax,%rax)
+100003f2b: 0f 1f 44 00 00              	nopl	(%rax,%rax)
+
+0000000100003f30 <soTest::soTest()>:
+100003f30: 55                          	pushq	%rbp
+100003f31: 48 89 e5                    	movq	%rsp, %rbp
+100003f34: 48 89 7d f8                 	movq	%rdi, -8(%rbp)
+100003f38: 48 8b 45 f8                 	movq	-8(%rbp), %rax
+100003f3c: 48 8b 0d bd 00 00 00        	movq	189(%rip), %rcx         ## 0x100004000 <dyld_stub_binder+0x100004000>
+100003f43: 48 83 c1 10                 	addq	$16, %rcx
+100003f47: 48 89 08                    	movq	%rcx, (%rax)
+100003f4a: 5d                          	popq	%rbp
+100003f4b: c3                          	retq
+
+Disassembly of section __TEXT,__stubs:
+
+0000000100003f4c <__stubs>:
+100003f4c: ff 25 ae 40 00 00           	jmpq	*16558(%rip)            ## 0x100008000 <dyld_stub_binder+0x100008000>
+100003f52: ff 25 b0 40 00 00           	jmpq	*16560(%rip)            ## 0x100008008 <dyld_stub_binder+0x100008008>
+
+Disassembly of section __TEXT,__stub_helper:
+
+0000000100003f58 <__stub_helper>:
+100003f58: 4c 8d 1d b1 40 00 00        	leaq	16561(%rip), %r11       ## 0x100008010 <__dyld_private>
+100003f5f: 41 53                       	pushq	%r11
+100003f61: ff 25 a9 00 00 00           	jmpq	*169(%rip)              ## 0x100004010 <dyld_stub_binder+0x100004010>
+100003f67: 90                          	nop
+100003f68: 68 00 00 00 00              	pushq	$0
+100003f6d: e9 e6 ff ff ff              	jmp	0x100003f58 <__stub_helper>
+100003f72: 68 1a 00 00 00              	pushq	$26
+100003f77: e9 dc ff ff ff              	jmp	0x100003f58 <__stub_helper>
+
+Disassembly of section __TEXT,__cstring:
+
+0000000100003f7c <__cstring>:
+100003f7c: 61                          	<unknown>
+100003f7d: 54                          	pushq	%rsp
+100003f7e: 65 73 74                    	jae	0x100003ff5 <dyld_stub_binder+0x100003ff5>
+100003f81: 2d 66 75 6e 63              	subl	$1668183398, %eax       ## imm = 0x636E7566
+100003f86: 31 0a                       	xorl	%ecx, (%rdx)
+100003f88: 00 0a                       	addb	%cl, (%rdx)
+100003f8a: 0a 00                       	orb	(%rax), %al
+100003f8c: 4d 61                       	<unknown>
+100003f8e: 69 6e 54 65 73 74 2d        	imull	$762606437, 84(%rsi), %ebp ## imm = 0x2D747365
+100003f95: 66 75 6e                    	jne	0x100004006 <dyld_stub_binder+0x100004006>
+100003f98: 63 32                       	movslq	(%rdx), %esi
+100003f9a: 0a 00                       	orb	(%rax), %al
+100003f9c: 4d 61                       	<unknown>
+100003f9e: 69 6e 54 65 73 74 2d        	imull	$762606437, 84(%rsi), %ebp ## imm = 0x2D747365
+100003fa5: 66 75 6e                    	jne	0x100004016 <dyld_stub_binder+0x100004016>
+100003fa8: 63 33                       	movslq	(%rbx), %esi
+100003faa: 0a 00                       	orb	(%rax), %al
+
+Disassembly of section __TEXT,__const:
+
+0000000100003fac <typeinfo name for MainTest>:
+100003fac: 38 4d 61                    	cmpb	%cl, 97(%rbp)
+100003faf: 69 6e 54 65 73 74 00        	imull	$7631717, 84(%rsi), %ebp ## imm = 0x747365
+
+Disassembly of section __TEXT,__unwind_info:
+
+0000000100003fb8 <__unwind_info>:
+100003fb8: 01 00                       	addl	%eax, (%rax)
+100003fba: 00 00                       	addb	%al, (%rax)
+100003fbc: 1c 00                       	sbbb	$0, %al
+100003fbe: 00 00                       	addb	%al, (%rax)
+100003fc0: 00 00                       	addb	%al, (%rax)
+100003fc2: 00 00                       	addb	%al, (%rax)
+100003fc4: 1c 00                       	sbbb	$0, %al
+100003fc6: 00 00                       	addb	%al, (%rax)
+100003fc8: 00 00                       	addb	%al, (%rax)
+100003fca: 00 00                       	addb	%al, (%rax)
+100003fcc: 1c 00                       	sbbb	$0, %al
+100003fce: 00 00                       	addb	%al, (%rax)
+100003fd0: 02 00                       	addb	(%rax), %al
+100003fd2: 00 00                       	addb	%al, (%rax)
+100003fd4: 10 3e                       	adcb	%bh, (%rsi)
+100003fd6: 00 00                       	addb	%al, (%rax)
+100003fd8: 34 00                       	xorb	$0, %al
+100003fda: 00 00                       	addb	%al, (%rax)
+100003fdc: 34 00                       	xorb	$0, %al
+100003fde: 00 00                       	addb	%al, (%rax)
+100003fe0: 4d 3f                       	<unknown>
+100003fe2: 00 00                       	addb	%al, (%rax)
+100003fe4: 00 00                       	addb	%al, (%rax)
+100003fe6: 00 00                       	addb	%al, (%rax)
+100003fe8: 34 00                       	xorb	$0, %al
+100003fea: 00 00                       	addb	%al, (%rax)
+100003fec: 03 00                       	addl	(%rax), %eax
+100003fee: 00 00                       	addb	%al, (%rax)
+100003ff0: 0c 00                       	orb	$0, %al
+100003ff2: 01 00                       	addl	%eax, (%rax)
+100003ff4: 10 00                       	adcb	%al, (%rax)
+100003ff6: 01 00                       	addl	%eax, (%rax)
+100003ff8: 00 00                       	addb	%al, (%rax)
+100003ffa: 00 00                       	addb	%al, (%rax)
+100003ffc: 00 00                       	addb	%al, (%rax)
+100003ffe: 00 01                       	addb	%al, (%rcx)
+
+Disassembly of section __DATA_CONST,__got:
+
+0000000100004000 <__got>:
+		...
+100004008: 18 40 00                    	sbbb	%al, (%rax)
+10000400b: 00 01                       	addb	%al, (%rcx)
+		...
+100004015: 00 00                       	addb	%al, (%rax)
+100004017: 00                          	<unknown>
+
+Disassembly of section __DATA_CONST,__const:
+
+0000000100004018 <vtable for MainTest>:
+		...
+100004020: 38 40 00                    	cmpb	%al, (%rax)
+100004023: 00 01                       	addb	%al, (%rcx)
+100004025: 00 00                       	addb	%al, (%rax)
+100004027: 00 b0 3e 00 00 01           	addb	%dh, 16777278(%rax)
+10000402d: 00 00                       	addb	%al, (%rax)
+10000402f: 00 d0                       	addb	%dl, %al
+100004031: 3e 00 00                    	addb	%al, %ds:(%rax)
+100004034: 01 00                       	addl	%eax, (%rax)
+100004036: 00 00                       	addb	%al, (%rax)
+
+0000000100004038 <typeinfo for MainTest>:
+100004038: 10 00                       	adcb	%al, (%rax)
+10000403a: 00 00                       	addb	%al, (%rax)
+10000403c: 00 00                       	addb	%al, (%rax)
+10000403e: 00 00                       	addb	%al, (%rax)
+100004040: ac                          	lodsb	(%rsi), %al
+100004041: 3f                          	<unknown>
+100004042: 00 00                       	addb	%al, (%rax)
+100004044: 01 00                       	addl	%eax, (%rax)
+		...
+10000404e: 00 00                       	addb	%al, (%rax)
+
+Disassembly of section __DATA,__la_symbol_ptr:
+
+0000000100008000 <__la_symbol_ptr>:
+100008000: 68 3f 00 00 01              	pushq	$16777279               ## imm = 0x100003F
+100008005: 00 00                       	addb	%al, (%rax)
+100008007: 00 72 3f                    	addb	%dh, 63(%rdx)
+10000800a: 00 00                       	addb	%al, (%rax)
+10000800c: 01 00                       	addl	%eax, (%rax)
+10000800e: 00 00                       	addb	%al, (%rax)
+
+Disassembly of section __DATA,__data:
+
+0000000100008010 <__dyld_private>:
+		...
