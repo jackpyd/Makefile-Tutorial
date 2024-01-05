@@ -1,0 +1,380 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/Homebrew/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Darwin - 21.6.0 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/Homebrew/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/local/Homebrew/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/local/Homebrew/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/local/lib/llvm-16.0.4/b/bin/clang 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is Clang, found in:
+        /Users/jackc/Desktop/git-projects/Makefile-Tutorial/X1.CMake/02CMake的使用/demo2/build/CMakeFiles/3.28.1/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/Homebrew/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/local/Homebrew/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/local/Homebrew/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/local/lib/llvm-16.0.4/b/bin/clang++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is Clang, found in:
+        /Users/jackc/Desktop/git-projects/Makefile-Tutorial/X1.CMake/02CMake的使用/demo2/build/CMakeFiles/3.28.1/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/Homebrew/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/local/Homebrew/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/Users/jackc/Desktop/git-projects/Makefile-Tutorial/X1.CMake/02CMake\u7684\u4f7f\u7528/demo2/build/CMakeFiles/CMakeScratch/TryCompile-ndqbOk"
+      binary: "/Users/jackc/Desktop/git-projects/Makefile-Tutorial/X1.CMake/02CMake\u7684\u4f7f\u7528/demo2/build/CMakeFiles/CMakeScratch/TryCompile-ndqbOk"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/local/lib/llvm-16.0.4/b/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.6"
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/jackc/Desktop/git-projects/Makefile-Tutorial/X1.CMake/02CMake的使用/demo2/build/CMakeFiles/CMakeScratch/TryCompile-ndqbOk'
+        
+        Run Build Command(s): /usr/local/Homebrew/homebrew/Cellar/cmake/3.28.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e60b1/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_e60b1.dir/build.make CMakeFiles/cmTC_e60b1.dir/build
+        Building C object CMakeFiles/cmTC_e60b1.dir/CMakeCCompilerABI.c.o
+        /usr/local/lib/llvm-16.0.4/b/bin/clang   -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6   -v -Wl,-v -MD -MT CMakeFiles/cmTC_e60b1.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_e60b1.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_e60b1.dir/CMakeCCompilerABI.c.o -c /usr/local/Homebrew/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeCCompilerABI.c
+        clang version 16.0.4
+        Target: x86_64-apple-darwin21.6.0
+        Thread model: posix
+        InstalledDir: /usr/local/lib/llvm-16.0.4/b/bin
+        clang-16: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+         (in-process)
+         "/usr/local/lib/llvm-16.0.4/b/bin/clang-16" -cc1 -triple x86_64-apple-macosx12.6.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=all -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=13.1 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu penryn -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 820.1 -v -fcoverage-compilation-dir=/Users/jackc/Desktop/git-projects/Makefile-Tutorial/X1.CMake/02CMake的使用/demo2/build/CMakeFiles/CMakeScratch/TryCompile-ndqbOk -resource-dir /usr/local/lib/llvm-16.0.4/b/lib/clang/16 -dependency-file CMakeFiles/cmTC_e60b1.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_e60b1.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/local/include -internal-isystem /usr/local/lib/llvm-16.0.4/b/lib/clang/16/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include -fdebug-compilation-dir=/Users/jackc/Desktop/git-projects/Makefile-Tutorial/X1.CMake/02CMake的使用/demo2/build/CMakeFiles/CMakeScratch/TryCompile-ndqbOk -ferror-limit 19 -stack-protector 1 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_e60b1.dir/CMakeCCompilerABI.c.o -x c /usr/local/Homebrew/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 16.0.4 based upon LLVM 16.0.4 default target x86_64-apple-darwin21.6.0
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/local/include"
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/local/lib/llvm-16.0.4/b/lib/clang/16/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        Linking C executable cmTC_e60b1
+        /usr/local/Homebrew/homebrew/Cellar/cmake/3.28.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e60b1.dir/link.txt --verbose=1
+        /usr/local/lib/llvm-16.0.4/b/bin/clang  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/mysql-client/lib -v -Wl,-v CMakeFiles/cmTC_e60b1.dir/CMakeCCompilerABI.c.o -o cmTC_e60b1 
+        clang version 16.0.4
+        Target: x86_64-apple-darwin21.6.0
+        Thread model: posix
+        InstalledDir: /usr/local/lib/llvm-16.0.4/b/bin
+         "/usr/bin/ld" -demangle -lto_library /usr/local/lib/llvm-16.0.4/b/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 12.6.0 13.1 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -o cmTC_e60b1 -L/usr/local/opt/mysql-client/lib -L. -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_e60b1.dir/CMakeCCompilerABI.c.o -lSystem
+        @(#)PROGRAM:ld  PROJECT:ld64-820.1
+        BUILD 20:07:01 Nov  7 2022
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+        Library search paths:
+        	/usr/local/opt/mysql-client/lib
+        	.
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/lib
+        Framework search paths:
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/Homebrew/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/local/Homebrew/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/local/lib/llvm-16.0.4/b/lib/clang/16/include]
+          add: [/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include]
+        end of search list found
+        collapse include dir [/usr/local/lib/llvm-16.0.4/b/lib/clang/16/include] ==> [/usr/local/lib/llvm-16.0.4/b/lib/clang/16/include]
+        collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include]
+        implicit include dirs: [/usr/local/lib/llvm-16.0.4/b/lib/clang/16/include;/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/Homebrew/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/local/Homebrew/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/Users/jackc/Desktop/git-projects/Makefile-Tutorial/X1.CMake/02CMake的使用/demo2/build/CMakeFiles/CMakeScratch/TryCompile-ndqbOk']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/local/Homebrew/homebrew/Cellar/cmake/3.28.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e60b1/fast]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_e60b1.dir/build.make CMakeFiles/cmTC_e60b1.dir/build]
+        ignore line: [Building C object CMakeFiles/cmTC_e60b1.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/local/lib/llvm-16.0.4/b/bin/clang   -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6   -v -Wl -v -MD -MT CMakeFiles/cmTC_e60b1.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_e60b1.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_e60b1.dir/CMakeCCompilerABI.c.o -c /usr/local/Homebrew/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang version 16.0.4]
+        ignore line: [Target: x86_64-apple-darwin21.6.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/local/lib/llvm-16.0.4/b/bin]
+        ignore line: [clang-16: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/local/lib/llvm-16.0.4/b/bin/clang-16" -cc1 -triple x86_64-apple-macosx12.6.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=all -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=13.1 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu penryn -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 820.1 -v -fcoverage-compilation-dir=/Users/jackc/Desktop/git-projects/Makefile-Tutorial/X1.CMake/02CMake的使用/demo2/build/CMakeFiles/CMakeScratch/TryCompile-ndqbOk -resource-dir /usr/local/lib/llvm-16.0.4/b/lib/clang/16 -dependency-file CMakeFiles/cmTC_e60b1.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_e60b1.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/local/include -internal-isystem /usr/local/lib/llvm-16.0.4/b/lib/clang/16/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include -fdebug-compilation-dir=/Users/jackc/Desktop/git-projects/Makefile-Tutorial/X1.CMake/02CMake的使用/demo2/build/CMakeFiles/CMakeScratch/TryCompile-ndqbOk -ferror-limit 19 -stack-protector 1 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_e60b1.dir/CMakeCCompilerABI.c.o -x c /usr/local/Homebrew/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 16.0.4 based upon LLVM 16.0.4 default target x86_64-apple-darwin21.6.0]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/Library/Frameworks"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/local/lib/llvm-16.0.4/b/lib/clang/16/include]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks (framework directory)]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_e60b1]
+        ignore line: [/usr/local/Homebrew/homebrew/Cellar/cmake/3.28.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e60b1.dir/link.txt --verbose=1]
+        ignore line: [/usr/local/lib/llvm-16.0.4/b/bin/clang  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -Wl -search_paths_first -Wl -headerpad_max_install_names -L/usr/local/opt/mysql-client/lib -v -Wl -v CMakeFiles/cmTC_e60b1.dir/CMakeCCompilerABI.c.o -o cmTC_e60b1 ]
+        ignore line: [clang version 16.0.4]
+        ignore line: [Target: x86_64-apple-darwin21.6.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/local/lib/llvm-16.0.4/b/bin]
+        link line: [ "/usr/bin/ld" -demangle -lto_library /usr/local/lib/llvm-16.0.4/b/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 12.6.0 13.1 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -o cmTC_e60b1 -L/usr/local/opt/mysql-client/lib -L. -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_e60b1.dir/CMakeCCompilerABI.c.o -lSystem]
+          arg [/usr/bin/ld] ==> ignore
+          arg [-demangle] ==> ignore
+          arg [-lto_library] ==> ignore, skip following value
+          arg [/usr/local/lib/llvm-16.0.4/b/lib/libLTO.dylib] ==> skip value of -lto_library
+          arg [-dynamic] ==> ignore
+          arg [-arch] ==> ignore
+          arg [x86_64] ==> ignore
+          arg [-platform_version] ==> ignore
+          arg [macos] ==> ignore
+          arg [12.6.0] ==> ignore
+          arg [13.1] ==> ignore
+          arg [-syslibroot] ==> ignore
+          arg [/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_e60b1] ==> ignore
+          arg [-L/usr/local/opt/mysql-client/lib] ==> dir [/usr/local/opt/mysql-client/lib]
+          arg [-L.] ==> ignore
+          arg [-L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib] ==> dir [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib]
+          arg [-search_paths_first] ==> ignore
+          arg [-headerpad_max_install_names] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_e60b1.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lSystem] ==> lib [System]
+        Library search paths: [;/usr/local/opt/mysql-client/lib;.;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/lib]
+        Framework search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/]
+        remove lib [System]
+        collapse library dir [/usr/local/opt/mysql-client/lib] ==> [/usr/local/opt/mysql-client/lib]
+        collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib]
+        collapse library dir [/usr/local/opt/mysql-client/lib] ==> [/usr/local/opt/mysql-client/lib]
+        collapse library dir [.] ==> [/Users/jackc/Desktop/git-projects/Makefile-Tutorial/X1.CMake/02CMake的使用/demo2]
+        collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib]
+        collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/lib] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/lib]
+        collapse framework dir [/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks]
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: [/usr/local/opt/mysql-client/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib;/Users/jackc/Desktop/git-projects/Makefile-Tutorial/X1.CMake/02CMake的使用/demo2;/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/lib]
+        implicit fwks: [/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks]
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/Homebrew/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/local/Homebrew/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/Users/jackc/Desktop/git-projects/Makefile-Tutorial/X1.CMake/02CMake\u7684\u4f7f\u7528/demo2/build/CMakeFiles/CMakeScratch/TryCompile-KRDNPl"
+      binary: "/Users/jackc/Desktop/git-projects/Makefile-Tutorial/X1.CMake/02CMake\u7684\u4f7f\u7528/demo2/build/CMakeFiles/CMakeScratch/TryCompile-KRDNPl"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/local/lib/llvm-16.0.4/b/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.6"
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/jackc/Desktop/git-projects/Makefile-Tutorial/X1.CMake/02CMake的使用/demo2/build/CMakeFiles/CMakeScratch/TryCompile-KRDNPl'
+        
+        Run Build Command(s): /usr/local/Homebrew/homebrew/Cellar/cmake/3.28.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c4ef2/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_c4ef2.dir/build.make CMakeFiles/cmTC_c4ef2.dir/build
+        Building CXX object CMakeFiles/cmTC_c4ef2.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/local/lib/llvm-16.0.4/b/bin/clang++   -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6   -v -Wl,-v -MD -MT CMakeFiles/cmTC_c4ef2.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_c4ef2.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_c4ef2.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/Homebrew/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang version 16.0.4
+        Target: x86_64-apple-darwin21.6.0
+        Thread model: posix
+        InstalledDir: /usr/local/lib/llvm-16.0.4/b/bin
+        clang-16: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+        ignoring nonexistent directory "/usr/local/lib/llvm-16.0.4/b/bin/../include/c++/v1"
+         (in-process)
+         "/usr/local/lib/llvm-16.0.4/b/bin/clang-16" -cc1 -triple x86_64-apple-macosx12.6.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=all -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=13.1 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu penryn -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 820.1 -v -fcoverage-compilation-dir=/Users/jackc/Desktop/git-projects/Makefile-Tutorial/X1.CMake/02CMake的使用/demo2/build/CMakeFiles/CMakeScratch/TryCompile-KRDNPl -resource-dir /usr/local/lib/llvm-16.0.4/b/lib/clang/16 -dependency-file CMakeFiles/cmTC_c4ef2.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_c4ef2.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/local/include -internal-isystem /usr/local/lib/llvm-16.0.4/b/lib/clang/16/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include -fdeprecated-macro -fdebug-compilation-dir=/Users/jackc/Desktop/git-projects/Makefile-Tutorial/X1.CMake/02CMake的使用/demo2/build/CMakeFiles/CMakeScratch/TryCompile-KRDNPl -ferror-limit 19 -stack-protector 1 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fmax-type-align=16 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_c4ef2.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/Homebrew/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 16.0.4 based upon LLVM 16.0.4 default target x86_64-apple-darwin21.6.0
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/local/include"
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1
+         /usr/local/lib/llvm-16.0.4/b/lib/clang/16/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        Linking CXX executable cmTC_c4ef2
+        /usr/local/Homebrew/homebrew/Cellar/cmake/3.28.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c4ef2.dir/link.txt --verbose=1
+        /usr/local/lib/llvm-16.0.4/b/bin/clang++  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/mysql-client/lib -v -Wl,-v CMakeFiles/cmTC_c4ef2.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_c4ef2 
+        clang version 16.0.4
+        Target: x86_64-apple-darwin21.6.0
+        Thread model: posix
+        InstalledDir: /usr/local/lib/llvm-16.0.4/b/bin
+         "/usr/bin/ld" -demangle -lto_library /usr/local/lib/llvm-16.0.4/b/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 12.6.0 13.1 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -o cmTC_c4ef2 -L/usr/local/opt/mysql-client/lib -L. -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_c4ef2.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem
+        @(#)PROGRAM:ld  PROJECT:ld64-820.1
+        BUILD 20:07:01 Nov  7 2022
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+        Library search paths:
+        	/usr/local/opt/mysql-client/lib
+        	.
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/lib
+        Framework search paths:
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/Homebrew/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/local/Homebrew/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1]
+          add: [/usr/local/lib/llvm-16.0.4/b/lib/clang/16/include]
+          add: [/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include]
+        end of search list found
+        collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1]
+        collapse include dir [/usr/local/lib/llvm-16.0.4/b/lib/clang/16/include] ==> [/usr/local/lib/llvm-16.0.4/b/lib/clang/16/include]
+        collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include]
+        implicit include dirs: [/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1;/usr/local/lib/llvm-16.0.4/b/lib/clang/16/include;/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/Homebrew/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/local/Homebrew/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/Users/jackc/Desktop/git-projects/Makefile-Tutorial/X1.CMake/02CMake的使用/demo2/build/CMakeFiles/CMakeScratch/TryCompile-KRDNPl']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/local/Homebrew/homebrew/Cellar/cmake/3.28.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c4ef2/fast]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_c4ef2.dir/build.make CMakeFiles/cmTC_c4ef2.dir/build]
+        ignore line: [Building CXX object CMakeFiles/cmTC_c4ef2.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/local/lib/llvm-16.0.4/b/bin/clang++   -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6   -v -Wl -v -MD -MT CMakeFiles/cmTC_c4ef2.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_c4ef2.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_c4ef2.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/Homebrew/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang version 16.0.4]
+        ignore line: [Target: x86_64-apple-darwin21.6.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/local/lib/llvm-16.0.4/b/bin]
+        ignore line: [clang-16: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+        ignore line: [ignoring nonexistent directory "/usr/local/lib/llvm-16.0.4/b/bin/../include/c++/v1"]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/local/lib/llvm-16.0.4/b/bin/clang-16" -cc1 -triple x86_64-apple-macosx12.6.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=all -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=13.1 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu penryn -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 820.1 -v -fcoverage-compilation-dir=/Users/jackc/Desktop/git-projects/Makefile-Tutorial/X1.CMake/02CMake的使用/demo2/build/CMakeFiles/CMakeScratch/TryCompile-KRDNPl -resource-dir /usr/local/lib/llvm-16.0.4/b/lib/clang/16 -dependency-file CMakeFiles/cmTC_c4ef2.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_c4ef2.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/local/include -internal-isystem /usr/local/lib/llvm-16.0.4/b/lib/clang/16/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include -fdeprecated-macro -fdebug-compilation-dir=/Users/jackc/Desktop/git-projects/Makefile-Tutorial/X1.CMake/02CMake的使用/demo2/build/CMakeFiles/CMakeScratch/TryCompile-KRDNPl -ferror-limit 19 -stack-protector 1 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fmax-type-align=16 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_c4ef2.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/Homebrew/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 16.0.4 based upon LLVM 16.0.4 default target x86_64-apple-darwin21.6.0]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/Library/Frameworks"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1]
+        ignore line: [ /usr/local/lib/llvm-16.0.4/b/lib/clang/16/include]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks (framework directory)]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_c4ef2]
+        ignore line: [/usr/local/Homebrew/homebrew/Cellar/cmake/3.28.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c4ef2.dir/link.txt --verbose=1]
+        ignore line: [/usr/local/lib/llvm-16.0.4/b/bin/clang++  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -Wl -search_paths_first -Wl -headerpad_max_install_names -L/usr/local/opt/mysql-client/lib -v -Wl -v CMakeFiles/cmTC_c4ef2.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_c4ef2 ]
+        ignore line: [clang version 16.0.4]
+        ignore line: [Target: x86_64-apple-darwin21.6.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/local/lib/llvm-16.0.4/b/bin]
+        link line: [ "/usr/bin/ld" -demangle -lto_library /usr/local/lib/llvm-16.0.4/b/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 12.6.0 13.1 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -o cmTC_c4ef2 -L/usr/local/opt/mysql-client/lib -L. -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_c4ef2.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem]
+          arg [/usr/bin/ld] ==> ignore
+          arg [-demangle] ==> ignore
+          arg [-lto_library] ==> ignore, skip following value
+          arg [/usr/local/lib/llvm-16.0.4/b/lib/libLTO.dylib] ==> skip value of -lto_library
+          arg [-dynamic] ==> ignore
+          arg [-arch] ==> ignore
+          arg [x86_64] ==> ignore
+          arg [-platform_version] ==> ignore
+          arg [macos] ==> ignore
+          arg [12.6.0] ==> ignore
+          arg [13.1] ==> ignore
+          arg [-syslibroot] ==> ignore
+          arg [/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_c4ef2] ==> ignore
+          arg [-L/usr/local/opt/mysql-client/lib] ==> dir [/usr/local/opt/mysql-client/lib]
+          arg [-L.] ==> ignore
+          arg [-L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib] ==> dir [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib]
+          arg [-search_paths_first] ==> ignore
+          arg [-headerpad_max_install_names] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_c4ef2.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lc++] ==> lib [c++]
+          arg [-lSystem] ==> lib [System]
+        Library search paths: [;/usr/local/opt/mysql-client/lib;.;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/lib]
+        Framework search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/]
+        remove lib [System]
+        collapse library dir [/usr/local/opt/mysql-client/lib] ==> [/usr/local/opt/mysql-client/lib]
+        collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib]
+        collapse library dir [/usr/local/opt/mysql-client/lib] ==> [/usr/local/opt/mysql-client/lib]
+        collapse library dir [.] ==> [/Users/jackc/Desktop/git-projects/Makefile-Tutorial/X1.CMake/02CMake的使用/demo2]
+        collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib]
+        collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/lib] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/lib]
+        collapse framework dir [/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks]
+        implicit libs: [c++]
+        implicit objs: []
+        implicit dirs: [/usr/local/opt/mysql-client/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib;/Users/jackc/Desktop/git-projects/Makefile-Tutorial/X1.CMake/02CMake的使用/demo2;/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/lib]
+        implicit fwks: [/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks]
+      
+      
+...

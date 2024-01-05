@@ -1,0 +1,3 @@
+/Users/jackc/Desktop/git-projects/Makefile-Tutorial/X1.CMake/02CMake的使用/demo2/build/CMakeFiles/app.dir
+/Users/jackc/Desktop/git-projects/Makefile-Tutorial/X1.CMake/02CMake的使用/demo2/build/CMakeFiles/edit_cache.dir
+/Users/jackc/Desktop/git-projects/Makefile-Tutorial/X1.CMake/02CMake的使用/demo2/build/CMakeFiles/rebuild_cache.dir
